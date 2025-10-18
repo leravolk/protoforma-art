@@ -7,7 +7,7 @@ export const ContactsSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="font-display text-2xl font-light text-primary tracking-wider">
+            <h3 className="font-display text-2xl font-bold text-primary tracking-wide">
               Контакты
             </h3>
             

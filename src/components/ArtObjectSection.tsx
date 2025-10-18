@@ -49,7 +49,7 @@ export const ArtObjectSection = () => {
 
           {/* Text Content */}
           <div className="order-1 md:order-2 space-y-8">
-            <h2 className="font-display text-4xl md:text-5xl font-light text-primary leading-tight">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary leading-tight">
               Арт-объект
               <br />
               «Швейная машинка»

@@ -56,7 +56,7 @@ export const HeroSection = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          <h1 className="font-display text-6xl md:text-8xl font-light tracking-wider text-primary mb-12">
+          <h1 className="font-display text-6xl md:text-8xl font-bold tracking-wide text-primary mb-12">
             PROTOFORMA
           </h1>
           
