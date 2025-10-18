@@ -1,0 +1,64 @@
+import { useEffect, useRef, useState } from "react";
+import boothBackground from "@/assets/booth-background.jpg";
+
+export const AboutMinimal = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section
+      id="about"
+      ref={sectionRef}
+      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 relative"
+    >
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `url(${boothBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+
+      <div className="relative container mx-auto max-w-7xl">
+        <div
+          className={`grid md:grid-cols-2 gap-24 transition-all duration-1000 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          {/* Left aligned text */}
+          <div className="flex items-start justify-start">
+            <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light max-w-xs">
+              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
+            </p>
+          </div>
+
+          {/* Right aligned text */}
+          <div className="flex items-end justify-end md:pt-32">
+            <p className="font-sans text-xs md:text-sm text-muted-foreground leading-relaxed font-light max-w-xs text-right">
+              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
