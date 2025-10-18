@@ -32,7 +32,7 @@ export const GalleryMinimal = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-32 px-8 md:px-16"
+      className="py-32 px-8 md:px-16 bg-background"
     >
       <div className="container mx-auto max-w-7xl">
         <div

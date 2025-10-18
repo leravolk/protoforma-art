@@ -2,7 +2,7 @@ import { Instagram, Send } from "lucide-react";
 
 export const ContactsMinimal = () => {
   return (
-    <section id="contact" className="py-32 px-8 md:px-16 border-t border-border">
+    <section id="contact" className="py-32 px-8 md:px-16 border-t border-border bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="space-y-16">
           {/* Title */}
