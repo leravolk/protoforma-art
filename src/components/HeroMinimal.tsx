@@ -19,8 +19,9 @@ export const HeroMinimal = () => {
         </h1>
         
         <p className="font-sans text-xs md:text-sm text-muted-foreground max-w-md mx-auto leading-relaxed font-light px-4">
-          мультидисциплинарное агентство, объединяющее искусство,<br />
-          бренд и пространство в единую живую систему.
+          мультидисциплинарное агентство,<br />
+          объединяющее искусство, бренд и пространство<br />
+          в единую живую систему.
         </p>
       </div>
     </section>
