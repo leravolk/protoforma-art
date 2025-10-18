@@ -1,5 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import sewingMachine from "@/assets/sewing-machine.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const ArtObjectMinimal = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,15 +43,41 @@ export const ArtObjectMinimal = () => {
         >
           {/* Asymmetric Grid */}
           <div className="grid md:grid-cols-12 gap-12 items-start">
-            {/* Image - Takes 7 columns */}
+            {/* Carousel - Takes 7 columns */}
             <div className="md:col-span-7 md:col-start-1">
-              <div className="aspect-square overflow-hidden bg-muted">
-                <img
-                  src={sewingMachine}
-                  alt="Винтажная швейная машинка"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                />
-              </div>
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={sewingMachine}
+                        alt="Винтажная швейная машинка - вид 1"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={sewingMachine}
+                        alt="Винтажная швейная машинка - вид 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={sewingMachine}
+                        alt="Винтажная швейная машинка - вид 3"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-4" />
+                <CarouselNext className="right-4" />
+              </Carousel>
               <p className="mt-4 text-xs text-white/60 font-sans font-light">
                 Автор: Елизавета Григорова
               </p>

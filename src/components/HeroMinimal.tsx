@@ -14,8 +14,9 @@ export const HeroMinimal = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h1 className="font-display text-7xl md:text-9xl font-light tracking-tight text-primary">
-          PROTOFORMA
+        <h1 className="font-display font-light tracking-tight text-primary">
+          <span className="block text-[18vw] leading-none md:text-9xl">PROTO</span>
+          <span className="block text-[18vw] leading-none md:text-9xl">FORMA</span>
         </h1>
         
         <p className="font-sans text-xs md:text-sm text-muted-foreground max-w-md mx-auto leading-relaxed font-light">
