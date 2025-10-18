@@ -1,4 +1,5 @@
 import { Instagram, Send } from "lucide-react";
+import logoMotion from "@/assets/logo-motion.mp4";
 
 export const ContactsMinimal = () => {
   return (
@@ -46,8 +47,21 @@ export const ContactsMinimal = () => {
           </div>
         </div>
 
+        {/* Logo Motion */}
+        <div className="mt-24 flex justify-center">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-48 md:w-64 opacity-90"
+          >
+            <source src={logoMotion} type="video/mp4" />
+          </video>
+        </div>
+
         {/* Copyright */}
-        <div className="mt-24 pt-8 border-t border-border/30">
+        <div className="mt-12 pt-8 border-t border-border/30">
           <p className="font-sans text-[10px] text-muted-foreground/60 tracking-wider">
             © 2025 PROTOFORMA
           </p>
