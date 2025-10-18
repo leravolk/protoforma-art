@@ -39,7 +39,7 @@ export const AboutMinimal = () => {
       />
       
       {/* Black Overlay */}
-      <div className="absolute inset-0 bg-black opacity-20" />
+      <div className="absolute inset-0 bg-black opacity-60" />
 
       <div className="relative container mx-auto max-w-7xl">
         <div
@@ -49,14 +49,14 @@ export const AboutMinimal = () => {
         >
           {/* Left aligned text */}
           <div className="flex items-start justify-start">
-            <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light max-w-xs">
+            <p className="font-sans text-xs md:text-sm text-white leading-relaxed font-light max-w-xs">
               Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
             </p>
           </div>
 
           {/* Right aligned text */}
           <div className="flex items-end justify-end md:pt-32">
-            <p className="font-sans text-xs md:text-sm text-muted-foreground leading-relaxed font-light max-w-xs text-right">
+            <p className="font-sans text-xs md:text-sm text-white/80 leading-relaxed font-light max-w-xs text-right">
               Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
             </p>
           </div>

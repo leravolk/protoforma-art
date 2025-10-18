@@ -7,7 +7,7 @@ export const ContactsMinimal = () => {
         <div className="space-y-16">
           {/* Title */}
           <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
-            CONTACTS
+            КОНТАКТЫ
           </h2>
 
           {/* Contact Info - Asymmetric Layout */}
