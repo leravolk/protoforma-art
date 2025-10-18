@@ -30,13 +30,16 @@ export const AboutMinimal = () => {
     >
       {/* Background Image */}
       <div 
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-30"
         style={{
           backgroundImage: `url(${boothBackground})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
+      
+      {/* Black Overlay */}
+      <div className="absolute inset-0 bg-black opacity-20" />
 
       <div className="relative container mx-auto max-w-7xl">
         <div

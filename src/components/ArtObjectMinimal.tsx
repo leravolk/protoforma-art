@@ -26,7 +26,7 @@ export const ArtObjectMinimal = () => {
     <section
       id="works"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16"
+      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 bg-black"
     >
       <div className="container mx-auto max-w-7xl">
         <div
@@ -45,24 +45,24 @@ export const ArtObjectMinimal = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
-              <p className="mt-4 text-xs text-muted-foreground font-sans font-light">
+              <p className="mt-4 text-xs text-white/60 font-sans font-light">
                 Автор: Елизавета Григорова
               </p>
             </div>
 
             {/* Text Content - Takes 4 columns with offset */}
             <div className="md:col-span-4 md:col-start-9 space-y-8 md:pt-24">
-              <h2 className="font-display text-2xl md:text-3xl font-light text-primary">
+              <h2 className="font-display text-2xl md:text-3xl font-light text-white">
                 Арт-объект<br />
                 Швейная машинка
               </h2>
               
               <div className="space-y-6">
-                <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
+                <p className="font-sans text-xs md:text-sm text-white/90 leading-relaxed font-light">
                   Центральный арт-объект — швейная машинка, символ созидания и памяти о человеческом прикосновении.
                 </p>
                 
-                <p className="font-sans text-xs text-muted-foreground leading-relaxed font-light">
+                <p className="font-sans text-xs text-white/70 leading-relaxed font-light">
                   Она раскрывает возможность нового чувственного опыта и диалога между ремеслом, искусством и временем.
                 </p>
               </div>
