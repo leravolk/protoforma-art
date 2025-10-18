@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import boothBackground from "@/assets/booth-background.jpg";
+import boothBackground from "@/assets/booth-installation.jpg";
 
 export const AboutMinimal = () => {
   const [isVisible, setIsVisible] = useState(false);
