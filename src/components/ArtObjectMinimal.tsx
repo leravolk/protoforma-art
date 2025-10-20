@@ -1,9 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import booth1 from "@/assets/booth-1.jpg";
-import booth2 from "@/assets/booth-2.jpg";
-import booth3 from "@/assets/booth-3.jpg";
-import booth4 from "@/assets/booth-4.jpg";
-import booth5 from "@/assets/booth-5.jpg";
+import sewingMachine1 from "@/assets/sewing-machine-1.jpg";
+import sewingMachine2 from "@/assets/sewing-machine-2.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -65,8 +62,8 @@ export const ArtObjectMinimal = () => {
                   <CarouselItem>
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
-                        src={booth1}
-                        alt="Арт-объект стенда - вид 1"
+                        src={sewingMachine1}
+                        alt="Швейная машинка - вид 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -74,35 +71,8 @@ export const ArtObjectMinimal = () => {
                   <CarouselItem>
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
-                        src={booth2}
-                        alt="Арт-объект стенда - вид 2"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="aspect-square overflow-hidden bg-muted">
-                      <img
-                        src={booth3}
-                        alt="Арт-объект стенда - вид 3"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="aspect-square overflow-hidden bg-muted">
-                      <img
-                        src={booth4}
-                        alt="Арт-объект стенда - вид 4"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem>
-                    <div className="aspect-square overflow-hidden bg-muted">
-                      <img
-                        src={booth5}
-                        alt="Арт-объект стенда - вид 5"
+                        src={sewingMachine2}
+                        alt="Швейная машинка - вид 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
