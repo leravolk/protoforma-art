@@ -1,5 +1,5 @@
 import { Instagram, Send } from "lucide-react";
-import logoMotion from "@/assets/logo-motion-new.mp4";
+import logoMotion from "@/assets/logo-motion-final.mp4";
 
 export const ContactsMinimal = () => {
   return (
