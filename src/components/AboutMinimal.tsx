@@ -18,7 +18,7 @@ export const AboutMinimal = () => {
   const sectionRef = useRef<HTMLElement>(null);
   
   const plugin = useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   useEffect(() => {
@@ -46,12 +46,18 @@ export const AboutMinimal = () => {
     >
       <div className="container mx-auto max-w-7xl">
         <div
-          className={`grid md:grid-cols-12 gap-12 items-center transition-all duration-1000 ${
+          className={`space-y-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* Carousel - Left side, 7 columns */}
-          <div className="md:col-span-7 md:col-start-1">
+          {/* Title */}
+          <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
+            PROTOFORMA
+          </h2>
+
+          <div className="grid md:grid-cols-12 gap-12 items-center">
+            {/* Carousel - Left side, full height */}
+            <div className="md:col-span-7 md:col-start-1">
             <Carousel 
               className="w-full"
               plugins={[plugin.current]}
@@ -60,7 +66,7 @@ export const AboutMinimal = () => {
             >
               <CarouselContent>
                 <CarouselItem>
-                  <div className="aspect-square overflow-hidden bg-muted">
+                  <div className="h-[70vh] overflow-hidden bg-muted">
                     <img
                       src={booth1}
                       alt="Стенд Apriori Home - вид 1"
@@ -69,7 +75,7 @@ export const AboutMinimal = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square overflow-hidden bg-muted">
+                  <div className="h-[70vh] overflow-hidden bg-muted">
                     <img
                       src={booth2}
                       alt="Стенд Apriori Home - вид 2"
@@ -78,7 +84,7 @@ export const AboutMinimal = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square overflow-hidden bg-muted">
+                  <div className="h-[70vh] overflow-hidden bg-muted">
                     <img
                       src={booth3}
                       alt="Стенд Apriori Home - вид 3"
@@ -87,7 +93,7 @@ export const AboutMinimal = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square overflow-hidden bg-muted">
+                  <div className="h-[70vh] overflow-hidden bg-muted">
                     <img
                       src={booth4}
                       alt="Стенд Apriori Home - вид 4"
@@ -96,7 +102,7 @@ export const AboutMinimal = () => {
                   </div>
                 </CarouselItem>
                 <CarouselItem>
-                  <div className="aspect-square overflow-hidden bg-muted">
+                  <div className="h-[70vh] overflow-hidden bg-muted">
                     <img
                       src={booth5}
                       alt="Стенд Apriori Home - вид 5"
@@ -108,10 +114,10 @@ export const AboutMinimal = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-          </div>
+            </div>
 
-          {/* Text Content - Right side, 4 columns with offset */}
-          <div className="md:col-span-4 md:col-start-9 space-y-6">
+            {/* Text Content - Right side, 4 columns with offset */}
+            <div className="md:col-span-4 md:col-start-9 space-y-6">
             <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
               Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
             </p>
@@ -119,6 +125,7 @@ export const AboutMinimal = () => {
             <p className="font-sans text-xs md:text-sm text-muted-foreground leading-relaxed font-light">
               Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
             </p>
+            </div>
           </div>
         </div>
       </div>

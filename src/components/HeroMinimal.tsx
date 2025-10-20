@@ -43,6 +43,18 @@ export const HeroMinimal = () => {
         className="absolute top-[40%] left-[8%] w-14 h-14 opacity-20 blur-[3px] animate-float"
         style={{ animationDelay: '4s', animationDuration: '11s' }}
       />
+      <img 
+        src={crystal3} 
+        alt="" 
+        className="absolute top-[18%] right-[25%] w-28 h-28 opacity-40 animate-float"
+        style={{ animationDelay: '0.5s', animationDuration: '9s' }}
+      />
+      <img 
+        src={crystal1} 
+        alt="" 
+        className="absolute bottom-[18%] left-[30%] w-32 h-32 opacity-35 animate-float"
+        style={{ animationDelay: '2.5s', animationDuration: '10s' }}
+      />
       
       <div
         className={`text-center space-y-8 md:space-y-12 transition-all duration-1000 relative z-10 ${
