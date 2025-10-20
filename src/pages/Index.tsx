@@ -10,8 +10,8 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroMinimal />
-      <AboutMinimal />
       <ArtObjectMinimal />
+      <AboutMinimal />
       <GalleryMinimal />
       <ContactsMinimal />
     </main>

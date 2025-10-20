@@ -11,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Badge } from "@/components/ui/badge";
 import Autoplay from "embla-carousel-autoplay";
 
 export const ArtObjectMinimal = () => {
@@ -117,10 +118,13 @@ export const ArtObjectMinimal = () => {
 
             {/* Text Content - Takes 4 columns with offset */}
             <div className="md:col-span-4 md:col-start-9 space-y-8 md:pt-24">
-              <h2 className="font-display text-2xl md:text-3xl font-light text-white">
-                Арт-объект<br />
-                Швейная машинка
-              </h2>
+              <div className="space-y-4">
+                <Badge variant="secondary" className="text-xs">В продаже</Badge>
+                <h2 className="font-display text-2xl md:text-3xl font-light text-white">
+                  Арт-объект<br />
+                  Швейная машинка
+                </h2>
+              </div>
               
               <div className="space-y-6">
                 <p className="font-sans text-xs md:text-sm text-white/90 leading-relaxed font-light">
