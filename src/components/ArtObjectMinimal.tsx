@@ -87,9 +87,9 @@ export const ArtObjectMinimal = () => {
             </div>
 
             {/* Text Content - Takes 4 columns with offset */}
-            <div className="md:col-span-4 md:col-start-9 space-y-8 md:pt-24">
+            <div className="md:col-span-4 md:col-start-9 space-y-8">
               <div className="space-y-4">
-                <Badge variant="secondary" className="text-xs">В продаже</Badge>
+                <Badge variant="secondary" className="text-xs">готово к продаже</Badge>
                 <h2 className="font-display text-2xl md:text-3xl font-light text-white">
                   Арт-объект<br />
                   Швейная машинка
@@ -103,6 +103,10 @@ export const ArtObjectMinimal = () => {
                 
                 <p className="font-sans text-xs text-white/70 leading-relaxed font-light">
                   Она раскрывает возможность нового чувственного опыта и диалога между ремеслом, искусством и временем.
+                </p>
+                
+                <p className="font-sans text-xs text-white/90 leading-relaxed font-light">
+                  Для связи: <a href="tel:+79168116795" className="hover:text-white transition-colors">+7 (916) 811-67-95</a>
                 </p>
               </div>
             </div>
