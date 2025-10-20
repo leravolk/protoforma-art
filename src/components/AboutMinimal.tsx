@@ -114,7 +114,7 @@ export const AboutMinimal = () => {
             {/* Text Content - Right side, 4 columns with offset */}
             <div className="md:col-span-4 md:col-start-9 space-y-6 text-center md:text-left">
               {/* Title - appears after carousel on mobile */}
-              <h2 className="font-display text-4xl md:text-5xl font-light text-primary tracking-tight mb-8">
+              <h2 className="font-display text-4xl md:text-3xl font-light text-primary tracking-tight mb-8">
                 PROTOFORMA
               </h2>
               
