@@ -50,11 +50,6 @@ export const AboutMinimal = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* Title */}
-          <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
-            PROTOFORMA
-          </h2>
-
           <div className="grid md:grid-cols-12 gap-12 items-center">
             {/* Carousel - Left side, full height */}
             <div className="md:col-span-7 md:col-start-1">
@@ -118,7 +113,12 @@ export const AboutMinimal = () => {
 
             {/* Text Content - Right side, 4 columns with offset */}
             <div className="md:col-span-4 md:col-start-9 space-y-6">
-            <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
+              {/* Title - appears after carousel on mobile */}
+              <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight mb-8">
+                PROTOFORMA
+              </h2>
+              
+              <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
               Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
             </p>
             
