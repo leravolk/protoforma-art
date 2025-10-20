@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
+import crystalClear from "@/assets/crystal-octagon-clear.png";
 
 export const HeroMinimal = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,7 +45,7 @@ export const HeroMinimal = () => {
         style={{ animationDelay: '4s', animationDuration: '11s' }}
       />
       <img 
-        src={crystal3} 
+        src={crystalClear} 
         alt="" 
         className="absolute top-[15%] right-[30%] w-36 h-36 opacity-40 animate-float mix-blend-screen"
         style={{ animationDelay: '0.5s', animationDuration: '9s' }}
