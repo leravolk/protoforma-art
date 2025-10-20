@@ -1,5 +1,5 @@
 import { Instagram, Send } from "lucide-react";
-import logoMotion from "@/assets/logo-motion.mp4";
+import logoMotion from "@/assets/logo-motion-new.mp4";
 
 export const ContactsMinimal = () => {
   return (
@@ -48,7 +48,7 @@ export const ContactsMinimal = () => {
         </div>
 
         {/* Logo Motion */}
-        <div className="mt-24 -mx-8 md:-mx-16">
+        <div className="mt-24">
           <video
             autoPlay
             loop
