@@ -40,9 +40,6 @@ export const AboutMinimal = () => {
       
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-60" />
-      
-      {/* Top Gradient for text readability */}
-      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-black via-black/80 to-transparent" />
 
       <div className="relative container mx-auto max-w-7xl">
         <div
@@ -50,15 +47,21 @@ export const AboutMinimal = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* First paragraph - full width */}
-          <p className="font-sans text-xs md:text-sm text-white leading-relaxed font-light w-full">
-            Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
-          </p>
+          {/* First paragraph - half width with local darkening */}
+          <div className="relative w-full md:w-1/2">
+            <div className="absolute inset-0 -inset-x-4 -inset-y-2 bg-gradient-to-b from-black via-black/90 to-black/70 blur-xl" />
+            <p className="relative font-sans text-xs md:text-sm text-white leading-relaxed font-light">
+              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
+            </p>
+          </div>
 
-          {/* Second paragraph - full width */}
-          <p className="font-sans text-xs md:text-sm text-white/80 leading-relaxed font-light w-full">
-            Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
-          </p>
+          {/* Second paragraph - half width with local darkening */}
+          <div className="relative w-full md:w-1/2">
+            <div className="absolute inset-0 -inset-x-4 -inset-y-2 bg-gradient-to-b from-black/70 via-black/90 to-black blur-xl" />
+            <p className="relative font-sans text-xs md:text-sm text-white/80 leading-relaxed font-light">
+              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
+            </p>
+          </div>
         </div>
       </div>
     </section>
