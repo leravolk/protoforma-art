@@ -48,13 +48,13 @@ export const ContactsMinimal = () => {
         </div>
 
         {/* Logo Motion */}
-        <div className="mt-24 flex justify-center">
+        <div className="mt-24 -mx-8 md:-mx-16">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-48 md:w-64 opacity-90"
+            className="w-full opacity-90"
           >
             <source src={logoMotion} type="video/mp4" />
           </video>
