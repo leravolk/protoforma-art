@@ -75,7 +75,7 @@ export const AboutMinimal = () => {
         >
           <div className="grid md:grid-cols-12 gap-12 items-center">
             {/* Text Content - Left side, 4 columns */}
-            <div className="md:col-span-4 md:col-start-1 space-y-6 text-center md:text-left order-2 md:order-1">
+            <div className="md:col-span-4 md:col-start-1 space-y-6 text-left order-2 md:order-1">
               {/* Title - appears after carousel on mobile */}
               <h2 className="font-display text-4xl md:text-3xl font-light text-primary tracking-tight mb-8">
                 PROTOFORMA
