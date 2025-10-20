@@ -40,48 +40,25 @@ export const AboutMinimal = () => {
       
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-60" />
+      
+      {/* Top Gradient for text readability */}
+      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-black via-black/80 to-transparent" />
 
       <div className="relative container mx-auto max-w-7xl">
-        {/* Mobile version */}
         <div
-          className={`md:hidden flex flex-col justify-between min-h-[60vh] transition-all duration-1000 ${
+          className={`flex flex-col gap-6 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          {/* First paragraph - top left */}
-          <div className="flex items-start justify-start pl-4">
-            <p className="font-sans text-xs text-white leading-relaxed font-light max-w-[280px]">
-              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
-            </p>
-          </div>
+          {/* First paragraph - full width */}
+          <p className="font-sans text-xs md:text-sm text-white leading-relaxed font-light w-full">
+            Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
+          </p>
 
-          {/* Second paragraph - bottom right */}
-          <div className="flex items-end justify-end pr-4 pt-24">
-            <p className="font-sans text-xs text-white/80 leading-relaxed font-light max-w-[280px] text-right">
-              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
-            </p>
-          </div>
-        </div>
-
-        {/* Desktop version */}
-        <div
-          className={`hidden md:grid md:grid-cols-2 gap-24 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          {/* Left aligned text */}
-          <div className="flex items-start justify-start">
-            <p className="font-sans text-sm text-white leading-relaxed font-light max-w-xs">
-              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
-            </p>
-          </div>
-
-          {/* Right aligned text */}
-          <div className="flex items-end justify-end pt-32">
-            <p className="font-sans text-sm text-white/80 leading-relaxed font-light max-w-xs text-right">
-              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
-            </p>
-          </div>
+          {/* Second paragraph - full width */}
+          <p className="font-sans text-xs md:text-sm text-white/80 leading-relaxed font-light w-full">
+            Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
+          </p>
         </div>
       </div>
     </section>
