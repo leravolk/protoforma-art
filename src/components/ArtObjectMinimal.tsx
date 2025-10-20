@@ -105,9 +105,25 @@ export const ArtObjectMinimal = () => {
                   Она раскрывает возможность нового чувственного опыта и диалога между ремеслом, искусством и временем.
                 </p>
                 
-                <p className="font-sans text-xs text-white/90 leading-relaxed font-light">
-                  Для связи: <a href="tel:+79168116795" className="hover:text-white transition-colors">+7 (916) 811-67-95</a>
-                </p>
+                <div className="font-sans text-xs text-white/90 leading-relaxed font-light space-y-2">
+                  <p>Для связи:</p>
+                  <div className="flex flex-wrap gap-3">
+                    <a 
+                      href="tel:+79168116795" 
+                      className="hover:text-white transition-colors underline"
+                    >
+                      Позвонить: +7 (916) 811-67-95
+                    </a>
+                    <a 
+                      href="https://t.me/+79168116795" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors underline"
+                    >
+                      Написать в Telegram
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
