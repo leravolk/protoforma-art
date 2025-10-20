@@ -1,4 +1,4 @@
-import { Instagram, Send } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 export const ContactsMinimal = () => {
   return (
@@ -10,39 +10,52 @@ export const ContactsMinimal = () => {
             КОНТАКТЫ
           </h2>
 
-          {/* Contact Info - Asymmetric Layout */}
-          <div className="grid md:grid-cols-12 gap-12">
-            <div className="md:col-span-4 md:col-start-1">
+          {/* Contact Info */}
+          <div className="space-y-6">
+            <a
+              href="mailto:hello@protoforma.art"
+              className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
+            >
+              hello@protoforma.art
+            </a>
+            
+            <div className="space-y-2">
               <a
-                href="mailto:hello@protoforma.art"
-                className="font-sans text-xs text-foreground hover:text-muted-foreground transition-colors"
+                href="tel:+79168116795"
+                className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
               >
-                hello@protoforma.art
+                +7 (916) 811-67-95
+              </a>
+              <a
+                href="https://t.me/+79168116795"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
+              >
+                Telegram
               </a>
             </div>
+          </div>
 
-            {/* Social Links */}
-            <div className="md:col-span-4 md:col-start-9 flex gap-8 justify-end">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
-              </a>
-              
-              <a
-                href="https://t.me"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-                aria-label="Telegram"
-              >
-                <Send className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
-              </a>
-            </div>
+          {/* Social Icons */}
+          <div className="flex gap-6 pt-8">
+            <a
+              href="mailto:hello@protoforma.art"
+              className="group"
+              aria-label="Email"
+            >
+              <Mail className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
+            </a>
+            
+            <a
+              href="https://t.me/+79168116795"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              aria-label="Telegram"
+            >
+              <Send className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
+            </a>
           </div>
         </div>
 

@@ -2,7 +2,6 @@ import { Navigation } from "@/components/Navigation";
 import { HeroMinimal } from "@/components/HeroMinimal";
 import { AboutMinimal } from "@/components/AboutMinimal";
 import { ArtObjectMinimal } from "@/components/ArtObjectMinimal";
-import { GalleryMinimal } from "@/components/GalleryMinimal";
 import { ContactsMinimal } from "@/components/ContactsMinimal";
 
 const Index = () => {
@@ -12,7 +11,6 @@ const Index = () => {
       <HeroMinimal />
       <ArtObjectMinimal />
       <AboutMinimal />
-      <GalleryMinimal />
       <ContactsMinimal />
     </main>
   );
