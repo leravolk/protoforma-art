@@ -4,6 +4,9 @@ import booth2 from "@/assets/booth-2.jpg";
 import booth3 from "@/assets/booth-3.jpg";
 import booth4 from "@/assets/booth-4.jpg";
 import booth5 from "@/assets/booth-5.jpg";
+import crystal1 from "@/assets/crystal-octagon-1.png";
+import crystal2 from "@/assets/crystal-octagon-2.png";
+import crystal3 from "@/assets/crystal-octagon-3.png";
 import {
   Carousel,
   CarouselContent,
@@ -42,9 +45,29 @@ export const AboutMinimal = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 bg-background"
+      className="min-h-screen flex items-center justify-center py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      <div className="container mx-auto max-w-7xl">
+      {/* Crystal octagon decorations */}
+      <img 
+        src={crystal1} 
+        alt="" 
+        className="absolute top-[15%] right-[8%] w-24 h-24 opacity-20 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '9s' }}
+      />
+      <img 
+        src={crystal2} 
+        alt="" 
+        className="absolute bottom-[20%] left-[10%] w-20 h-20 opacity-25 blur-[2px] animate-float mix-blend-screen"
+        style={{ animationDelay: '2s', animationDuration: '11s' }}
+      />
+      <img 
+        src={crystal3} 
+        alt="" 
+        className="absolute top-[35%] left-[5%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '10s' }}
+      />
+
+      <div className="w-full max-w-none relative z-10">
         <div
           className={`space-y-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

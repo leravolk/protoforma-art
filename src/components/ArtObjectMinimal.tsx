@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import sewingMachine1 from "@/assets/sewing-machine-1.jpg";
 import sewingMachine2 from "@/assets/sewing-machine-2.jpg";
+import crystal1 from "@/assets/crystal-octagon-1.png";
+import crystal2 from "@/assets/crystal-octagon-2.png";
+import crystal3 from "@/assets/crystal-octagon-3.png";
 import {
   Carousel,
   CarouselContent,
@@ -40,9 +43,29 @@ export const ArtObjectMinimal = () => {
     <section
       id="works"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-32 px-4 md:px-8 bg-black"
+      className="min-h-screen flex items-center justify-center py-32 px-4 md:px-8 bg-black relative overflow-hidden"
     >
-      <div className="w-full max-w-none">
+      {/* Crystal octagon decorations */}
+      <img 
+        src={crystal1} 
+        alt="" 
+        className="absolute top-[10%] left-[6%] w-28 h-28 opacity-20 blur-[2px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '10s' }}
+      />
+      <img 
+        src={crystal2} 
+        alt="" 
+        className="absolute bottom-[15%] right-[12%] w-20 h-20 opacity-25 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '3s', animationDuration: '12s' }}
+      />
+      <img 
+        src={crystal3} 
+        alt="" 
+        className="absolute top-[40%] right-[5%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '5s', animationDuration: '9s' }}
+      />
+
+      <div className="w-full max-w-none relative z-10">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
