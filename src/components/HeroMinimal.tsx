@@ -8,19 +8,9 @@ export const HeroMinimal = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-8 pt-20 bg-background relative">
-      {/* Decorative corner lines */}
-      <div className="absolute top-32 left-8 w-16 h-16 border-t border-l border-foreground/10" />
-      <div className="absolute top-32 right-8 w-16 h-16 border-t border-r border-foreground/10" />
-      <div className="absolute bottom-32 left-8 w-16 h-16 border-b border-l border-foreground/10" />
-      <div className="absolute bottom-32 right-8 w-16 h-16 border-b border-r border-foreground/10" />
-      
-      {/* Vertical accent lines */}
-      <div className="absolute left-24 top-48 bottom-48 w-[1px] bg-foreground/5" />
-      <div className="absolute right-24 top-48 bottom-48 w-[1px] bg-foreground/5" />
-      
+    <section className="min-h-screen flex flex-col items-center justify-center px-8 pt-20 bg-background">
       <div
-        className={`text-center space-y-8 md:space-y-12 transition-all duration-1000 relative ${
+        className={`text-center space-y-8 md:space-y-12 transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >

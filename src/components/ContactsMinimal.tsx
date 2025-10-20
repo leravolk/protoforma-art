@@ -1,15 +1,9 @@
 import { Instagram, Send } from "lucide-react";
-import logoMotion from "@/assets/logo-motion-final.mp4";
 
 export const ContactsMinimal = () => {
   return (
-    <section id="contact" className="py-32 px-8 md:px-16 bg-background relative">
-      {/* Top border with corner accents */}
-      <div className="absolute top-0 left-8 right-8 h-[1px] bg-foreground/10" />
-      <div className="absolute top-0 left-8 w-16 h-16 border-t border-l border-foreground/20" />
-      <div className="absolute top-0 right-8 w-16 h-16 border-t border-r border-foreground/20" />
-      
-      <div className="container mx-auto max-w-7xl relative">
+    <section id="contact" className="py-32 px-8 md:px-16 bg-background">
+      <div className="container mx-auto max-w-7xl">
         <div className="space-y-16">
           {/* Title */}
           <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
@@ -52,21 +46,8 @@ export const ContactsMinimal = () => {
           </div>
         </div>
 
-        {/* Logo Motion */}
-        <div className="mt-24">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full opacity-90"
-          >
-            <source src={logoMotion} type="video/mp4" />
-          </video>
-        </div>
-
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-border/30">
+        <div className="mt-24 pt-8">
           <p className="font-sans text-[10px] text-muted-foreground/60 tracking-wider">
             © 2025 PROTOFORMA
           </p>

@@ -32,17 +32,9 @@ export const GalleryMinimal = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-32 px-8 md:px-16 bg-background relative"
+      className="py-32 px-8 md:px-16 bg-background"
     >
-      {/* Horizontal dividers */}
-      <div className="absolute top-0 left-8 right-8 h-[1px] bg-foreground/10" />
-      <div className="absolute bottom-0 left-8 right-8 h-[1px] bg-foreground/10" />
-      
-      {/* Corner decorations */}
-      <div className="absolute top-8 left-8 w-12 h-12 border-t border-l border-foreground/10" />
-      <div className="absolute top-8 right-8 w-12 h-12 border-t border-r border-foreground/10" />
-      
-      <div className="container mx-auto max-w-7xl relative">
+      <div className="container mx-auto max-w-7xl">
         <div
           className={`grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

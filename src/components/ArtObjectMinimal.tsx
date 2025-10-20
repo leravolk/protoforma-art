@@ -33,17 +33,9 @@ export const ArtObjectMinimal = () => {
     <section
       id="works"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 bg-black relative"
+      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 bg-black"
     >
-      {/* Top and bottom border lines */}
-      <div className="absolute top-0 left-8 right-8 h-[1px] bg-foreground/10" />
-      <div className="absolute bottom-0 left-8 right-8 h-[1px] bg-foreground/10" />
-      
-      {/* Side accent lines */}
-      <div className="absolute left-8 top-32 bottom-32 w-[1px] bg-foreground/5" />
-      <div className="absolute right-8 top-32 bottom-32 w-[1px] bg-foreground/5" />
-      
-      <div className="container mx-auto max-w-7xl relative">
+      <div className="container mx-auto max-w-7xl">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
