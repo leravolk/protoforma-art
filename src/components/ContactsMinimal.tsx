@@ -3,8 +3,13 @@ import logoMotion from "@/assets/logo-motion-final.mp4";
 
 export const ContactsMinimal = () => {
   return (
-    <section id="contact" className="py-32 px-8 md:px-16 border-t border-border bg-background">
-      <div className="container mx-auto max-w-7xl">
+    <section id="contact" className="py-32 px-8 md:px-16 bg-background relative">
+      {/* Top border with corner accents */}
+      <div className="absolute top-0 left-8 right-8 h-[1px] bg-foreground/10" />
+      <div className="absolute top-0 left-8 w-16 h-16 border-t border-l border-foreground/20" />
+      <div className="absolute top-0 right-8 w-16 h-16 border-t border-r border-foreground/20" />
+      
+      <div className="container mx-auto max-w-7xl relative">
         <div className="space-y-16">
           {/* Title */}
           <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">

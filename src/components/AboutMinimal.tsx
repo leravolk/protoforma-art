@@ -28,6 +28,9 @@ export const AboutMinimal = () => {
       ref={sectionRef}
       className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 relative"
     >
+      {/* Horizontal divider lines */}
+      <div className="absolute top-0 left-8 right-8 h-[1px] bg-foreground/10" />
+      <div className="absolute bottom-0 left-8 right-8 h-[1px] bg-foreground/10" />
       {/* Background Image */}
       <div 
         className="absolute inset-0 opacity-30"
