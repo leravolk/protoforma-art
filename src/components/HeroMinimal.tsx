@@ -45,7 +45,7 @@ export const HeroMinimal = () => {
         style={{ animationDelay: '4s', animationDuration: '11s' }}
       />
       <img 
-        src={crystalClear} 
+        src={crystal1} 
         alt="" 
         className="absolute top-[15%] right-[30%] w-36 h-36 opacity-40 animate-float mix-blend-screen"
         style={{ animationDelay: '0.5s', animationDuration: '9s' }}
