@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import sewingMachine from "@/assets/sewing-machine.jpg";
+import booth1 from "@/assets/booth-1.jpg";
+import booth2 from "@/assets/booth-2.jpg";
+import booth3 from "@/assets/booth-3.jpg";
+import booth4 from "@/assets/booth-4.jpg";
+import booth5 from "@/assets/booth-5.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -7,10 +11,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 export const ArtObjectMinimal = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  
+  const plugin = useRef(
+    Autoplay({ delay: 1000, stopOnInteraction: true })
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,13 +54,18 @@ export const ArtObjectMinimal = () => {
           <div className="grid md:grid-cols-12 gap-12 items-start">
             {/* Carousel - Takes 7 columns */}
             <div className="md:col-span-7 md:col-start-1">
-              <Carousel className="w-full">
+              <Carousel 
+                className="w-full"
+                plugins={[plugin.current]}
+                onMouseEnter={plugin.current.stop}
+                onMouseLeave={plugin.current.reset}
+              >
                 <CarouselContent>
                   <CarouselItem>
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
-                        src={sewingMachine}
-                        alt="Винтажная швейная машинка - вид 1"
+                        src={booth1}
+                        alt="Арт-объект стенда - вид 1"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -59,8 +73,8 @@ export const ArtObjectMinimal = () => {
                   <CarouselItem>
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
-                        src={sewingMachine}
-                        alt="Винтажная швейная машинка - вид 2"
+                        src={booth2}
+                        alt="Арт-объект стенда - вид 2"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -68,8 +82,26 @@ export const ArtObjectMinimal = () => {
                   <CarouselItem>
                     <div className="aspect-square overflow-hidden bg-muted">
                       <img
-                        src={sewingMachine}
-                        alt="Винтажная швейная машинка - вид 3"
+                        src={booth3}
+                        alt="Арт-объект стенда - вид 3"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={booth4}
+                        alt="Арт-объект стенда - вид 4"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={booth5}
+                        alt="Арт-объект стенда - вид 5"
                         className="w-full h-full object-cover"
                       />
                     </div>
