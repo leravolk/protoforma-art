@@ -27,7 +27,7 @@ export const ContactsMinimal = () => {
       />
 
       <div className="container mx-auto max-w-7xl relative z-10">
-        <div className="space-y-16">
+        <div className="space-y-16 text-left">
           {/* Title */}
           <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
             КОНТАКТЫ

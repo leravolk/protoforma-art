@@ -74,8 +74,24 @@ export const AboutMinimal = () => {
           }`}
         >
           <div className="grid md:grid-cols-12 gap-12 items-center">
-            {/* Carousel - Left side, full height */}
-            <div className="md:col-span-7 md:col-start-1">
+            {/* Text Content - Left side, 4 columns */}
+            <div className="md:col-span-4 md:col-start-1 space-y-6 text-center md:text-left order-2 md:order-1">
+              {/* Title - appears after carousel on mobile */}
+              <h2 className="font-display text-4xl md:text-3xl font-light text-primary tracking-tight mb-8">
+                PROTOFORMA
+              </h2>
+              
+              <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
+              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
+            </p>
+            
+            <p className="font-sans text-xs md:text-sm text-muted-foreground leading-relaxed font-light">
+              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
+            </p>
+            </div>
+
+            {/* Carousel - Right side, full height */}
+            <div className="md:col-span-7 md:col-start-6 order-1 md:order-2">
             <Carousel 
               className="w-full"
               plugins={[plugin.current]}
@@ -132,22 +148,6 @@ export const AboutMinimal = () => {
               <CarouselPrevious className="left-4" />
               <CarouselNext className="right-4" />
             </Carousel>
-            </div>
-
-            {/* Text Content - Right side, 4 columns with offset */}
-            <div className="md:col-span-4 md:col-start-9 space-y-6 text-center md:text-left">
-              {/* Title - appears after carousel on mobile */}
-              <h2 className="font-display text-4xl md:text-3xl font-light text-primary tracking-tight mb-8">
-                PROTOFORMA
-              </h2>
-              
-              <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
-              Мы создаём диалог между эстетикой и функцией, превращая визуальный язык в способ взаимодействия.
-            </p>
-            
-            <p className="font-sans text-xs md:text-sm text-muted-foreground leading-relaxed font-light">
-              Стенд, созданный совместно с Apriori Home, выполнен как сказочная мастерская, где природа, труд и творчество переплетаются в единое полотно.
-            </p>
             </div>
           </div>
         </div>
