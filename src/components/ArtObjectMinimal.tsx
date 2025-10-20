@@ -40,9 +40,9 @@ export const ArtObjectMinimal = () => {
     <section
       id="works"
       ref={sectionRef}
-      className="min-h-screen flex items-center justify-center py-32 px-8 md:px-16 bg-black"
+      className="min-h-screen flex items-center justify-center py-32 px-4 md:px-8 bg-black"
     >
-      <div className="container mx-auto max-w-7xl">
+      <div className="w-full max-w-none">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
