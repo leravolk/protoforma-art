@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import booth1 from "@/assets/booth-1.jpg";
-import booth2 from "@/assets/booth-2.jpg";
-import booth3 from "@/assets/booth-3.jpg";
-import booth4 from "@/assets/booth-4.jpg";
-import booth5 from "@/assets/booth-5.jpg";
+import booth1 from "@/assets/booth-new-1.jpg";
+import booth2 from "@/assets/booth-new-2.jpg";
+import booth3 from "@/assets/booth-new-3.jpg";
+import booth4 from "@/assets/booth-new-4.jpg";
+import booth5 from "@/assets/booth-new-5.jpg";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
