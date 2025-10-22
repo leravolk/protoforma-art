@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import sewingMachine1 from "@/assets/sewing-machine-1.jpg";
-import sewingMachine2 from "@/assets/sewing-machine-2.jpg";
+import sewingMachine1 from "@/assets/sewing-new-1.jpg";
+import sewingMachine2 from "@/assets/sewing-new-2.jpg";
+import sewingMachine3 from "@/assets/sewing-new-3.jpg";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
@@ -96,6 +97,15 @@ export const ArtObjectMinimal = () => {
                       <img
                         src={sewingMachine2}
                         alt="Швейная машинка - вид 2"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="aspect-square overflow-hidden bg-muted">
+                      <img
+                        src={sewingMachine3}
+                        alt="Швейная машинка - вид 3"
                         className="w-full h-full object-cover"
                       />
                     </div>
