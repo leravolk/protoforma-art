@@ -1,4 +1,4 @@
-import { Mail, Send } from "lucide-react";
+import { Mail, Send, Instagram } from "lucide-react";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
@@ -84,6 +84,16 @@ export const ContactsMinimal = () => {
               aria-label="Telegram"
             >
               <Send className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/protoform.art?igsh=MXJ1OGY1aGF3cm8zcA%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-5 h-5 text-foreground group-hover:text-muted-foreground transition-colors" />
             </a>
           </div>
         </div>
