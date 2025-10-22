@@ -43,20 +43,26 @@ export const ContactsMinimal = () => {
             </a>
             
             <div className="space-y-2">
-            <a
-              href="tel:+79258462707"
-              className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
-            >
-              +7 925 846 2707
-            </a>
-            <a
-              href="https://t.me/+79258462707"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
-            >
-              Telegram
-            </a>
+              <a
+                href="tel:+79258462707"
+                className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
+              >
+                +7 925 846 2707
+              </a>
+              <a
+                href="tel:+79856650900"
+                className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
+              >
+                +7 985 665 0900
+              </a>
+              <a
+                href="https://t.me/+79258462707"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-sm text-foreground hover:text-muted-foreground transition-colors block"
+              >
+                Telegram
+              </a>
             </div>
           </div>
 
