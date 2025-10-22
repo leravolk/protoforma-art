@@ -63,7 +63,7 @@ export const HeroMinimal = () => {
         }`}
       >
         <h1 className="font-display font-light tracking-tight text-primary">
-          <span className="block text-[15vw] md:text-[12vw] lg:text-[10vw] leading-none">PROTOFORMA</span>
+          <span className="block text-[15vw] md:text-[12vw] lg:text-[10vw] leading-none">PROTOFORM</span>
         </h1>
         
         <p className="font-sans text-xs md:text-sm text-muted-foreground max-w-md mx-auto leading-relaxed font-light px-4">

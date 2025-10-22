@@ -78,7 +78,7 @@ export const AboutMinimal = () => {
             <div className="md:col-span-4 md:col-start-1 space-y-6 text-left order-2 md:order-1">
               {/* Title - appears after carousel on mobile */}
               <h2 className="font-display text-4xl md:text-3xl font-light text-primary tracking-tight mb-8">
-                PROTOFORMA
+                PROTOFORM
               </h2>
               
               <p className="font-sans text-xs md:text-sm text-foreground leading-relaxed font-light">
