@@ -5,7 +5,7 @@ import crystal3 from "@/assets/crystal-octagon-3.png";
 
 export const ContactsMinimal = () => {
   return (
-    <section id="contact" className="py-32 px-8 md:px-16 bg-background relative overflow-hidden">
+    <section id="contact" className="py-32 px-4 md:px-8 bg-background relative overflow-hidden">
       {/* Crystal octagon decorations */}
       <img 
         src={crystal1} 
@@ -26,7 +26,7 @@ export const ContactsMinimal = () => {
         style={{ animationDelay: '4.5s', animationDuration: '10s' }}
       />
 
-      <div className="container mx-auto max-w-7xl relative z-10">
+      <div className="w-full max-w-none relative z-10">
         <div className="space-y-16 text-left">
           {/* Title */}
           <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
