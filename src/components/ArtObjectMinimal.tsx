@@ -142,13 +142,13 @@ export const ArtObjectMinimal = () => {
                   <p>Для связи:</p>
                   <div className="flex flex-wrap gap-3">
                     <a 
-                      href="tel:+79168116795" 
+                      href="tel:+79258462707" 
                       className="hover:text-white transition-colors underline"
                     >
-                      Позвонить: +7 (916) 811-67-95
+                      Позвонить: +7 925 846 2707
                     </a>
                     <a 
-                      href="https://t.me/+79168116795" 
+                      href="https://t.me/+79258462707" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-white transition-colors underline"
