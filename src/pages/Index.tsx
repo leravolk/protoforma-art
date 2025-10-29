@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { HeroMinimal } from "@/components/HeroMinimal";
+import { IntroSection } from "@/components/IntroSection";
 import { AboutMinimal } from "@/components/AboutMinimal";
 import { ArtObjectMinimal } from "@/components/ArtObjectMinimal";
 import { ContactsMinimal } from "@/components/ContactsMinimal";
@@ -9,6 +10,7 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navigation />
       <HeroMinimal />
+      <IntroSection />
       <ArtObjectMinimal />
       <AboutMinimal />
       <ContactsMinimal />
