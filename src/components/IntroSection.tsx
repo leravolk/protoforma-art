@@ -51,14 +51,8 @@ export const IntroSection = () => {
             : "opacity-0 translate-y-10"
         }`}
       >
-        <p className="font-sans text-lg md:text-xl leading-relaxed text-foreground">
-          Мы — молодая команда, создающая проекты на пересечении искусства, дизайна и пространства.
-        </p>
-        <p className="font-sans text-lg md:text-xl leading-relaxed text-muted-foreground">
-          Вскоре здесь появится больше информации о нас, и наших идеях.
-        </p>
-        <p className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground pt-4">
-          Подписывайтесь на наши соцсети, чтобы следить за обновлениями.
+        <p className="font-sans text-lg md:text-xl leading-relaxed text-foreground max-w-5xl mx-auto">
+          Protoform — мультидисциплинарное творческое агентство на стыке искусства, бренда и пространственных решений. Мы создаём выставки, инсталляции, ивенты, стенды и арт-объекты, которые усиливают идентичность брендов и формируют эмоциональное взаимодействие с аудиторией. Наш подход строится на синтезе художественного взгляда и продакшна полного цикла.
         </p>
       </div>
     </section>
