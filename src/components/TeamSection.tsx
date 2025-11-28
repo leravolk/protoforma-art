@@ -70,31 +70,27 @@ export const TeamSection = () => {
         </h2>
 
         {/* Team photos grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12">
           {teamMembers.map((member, index) => (
             <div
               key={member.name}
-              className="group relative aspect-square overflow-hidden"
+              className="group"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
             >
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-background/0 group-hover:bg-background/10 transition-all duration-500" />
+              <div className="relative aspect-square overflow-hidden mb-3">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-background/0 group-hover:bg-background/10 transition-all duration-500" />
+              </div>
+              <p className="font-sans text-xs md:text-sm text-center text-foreground leading-tight">
+                {member.name}
+              </p>
             </div>
-          ))}
-        </div>
-
-        {/* Team names */}
-        <div className="text-center mb-12 space-y-2">
-          {teamMembers.map((member) => (
-            <p key={member.name} className="font-sans text-sm md:text-base text-muted-foreground">
-              {member.name}
-            </p>
           ))}
         </div>
 
