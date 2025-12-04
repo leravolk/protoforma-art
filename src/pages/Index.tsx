@@ -3,6 +3,7 @@ import { HeroMinimal } from "@/components/HeroMinimal";
 import { IntroSection } from "@/components/IntroSection";
 import { TeamSection } from "@/components/TeamSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { PhilosophySection } from "@/components/PhilosophySection";
 import { ContactsMinimal } from "@/components/ContactsMinimal";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <IntroSection />
       <TeamSection />
       <ProjectsSection />
+      <PhilosophySection />
       <ContactsMinimal />
     </main>
   );
