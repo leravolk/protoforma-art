@@ -40,6 +40,7 @@ export const ProjectsSection = () => {
 
   return (
     <section
+      id="projects"
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
