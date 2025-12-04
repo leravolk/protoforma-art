@@ -4,8 +4,9 @@ import ekaterina from "@/assets/team-ekaterina.jpg";
 import valeria from "@/assets/team-valeria.jpg";
 import anastasia from "@/assets/team-anastasia.jpg";
 import artur from "@/assets/team-artur.jpg";
-import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
+import crystal3 from "@/assets/crystal-octagon-3.png";
+import crystalClear from "@/assets/crystal-octagon-clear.png";
 
 const teamMembers = [
   { name: "Елизавета Григорова", image: elizaveta },
@@ -45,28 +46,40 @@ export const TeamSection = () => {
     >
       {/* Crystal decorations with depth effect */}
       <img
-        src={crystal1}
+        src={crystal2}
         alt=""
-        className="absolute top-[10%] left-[3%] w-20 h-20 opacity-25 animate-float mix-blend-screen"
+        className="absolute top-[8%] left-[4%] w-10 h-10 opacity-22 animate-float mix-blend-screen"
         style={{ animationDelay: '0s', animationDuration: '10s' }}
       />
       <img
-        src={crystal2}
+        src={crystal3}
         alt=""
-        className="absolute top-[20%] right-[5%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
+        className="absolute top-[15%] right-[6%] w-8 h-8 opacity-16 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '2s', animationDuration: '13s' }}
       />
       <img
-        src={crystal1}
+        src={crystalClear}
         alt=""
-        className="absolute bottom-[25%] right-[8%] w-24 h-24 opacity-20 blur-sm animate-float mix-blend-screen"
+        className="absolute bottom-[20%] right-[5%] w-11 h-11 opacity-18 blur-sm animate-float mix-blend-screen"
         style={{ animationDelay: '3s', animationDuration: '11s' }}
       />
       <img
         src={crystal2}
         alt=""
-        className="absolute bottom-[15%] left-[6%] w-14 h-14 opacity-12 blur-[3px] animate-float mix-blend-screen"
+        className="absolute bottom-[30%] left-[8%] w-7 h-7 opacity-14 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '5s', animationDuration: '15s' }}
+      />
+      <img
+        src={crystal3}
+        alt=""
+        className="absolute top-[45%] left-[3%] w-6 h-6 opacity-12 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '12s' }}
+      />
+      <img
+        src={crystalClear}
+        alt=""
+        className="absolute top-[35%] right-[10%] w-9 h-9 opacity-15 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '14s' }}
       />
 
       <div
