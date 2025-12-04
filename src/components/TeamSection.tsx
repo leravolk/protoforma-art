@@ -78,7 +78,7 @@ export const TeamSection = () => {
         }`}
       >
         {/* Title */}
-        <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground uppercase tracking-wide">
+        <h2 className="font-display text-2xl md:text-3xl text-left mb-16 text-foreground uppercase tracking-wide">
           команда PROTOFORM
         </h2>
 
@@ -108,7 +108,7 @@ export const TeamSection = () => {
         </div>
 
         {/* Description text */}
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="text-left">
           <p className="font-sans text-base md:text-lg leading-relaxed text-foreground">
             Мы придерживаемся горизонтальной организационной структуры, в которой роли формируются проектными задачами. Такой формат позволяет использовать компетенции каждого участника максимально эффективно, быстро и цельно реализовывать проекты.
           </p>

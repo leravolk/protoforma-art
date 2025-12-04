@@ -102,7 +102,7 @@ export const ProjectsSection = () => {
         }`}
       >
         {/* Section Title */}
-        <h2 className="font-display text-3xl md:text-4xl text-center mb-20 text-foreground uppercase tracking-wide">
+        <h2 className="font-display text-2xl md:text-3xl text-left mb-20 text-foreground uppercase tracking-wide">
           Реализованные проекты
         </h2>
 
