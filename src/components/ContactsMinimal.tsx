@@ -6,24 +6,30 @@ import crystal3 from "@/assets/crystal-octagon-3.png";
 export const ContactsMinimal = () => {
   return (
     <section id="contact" className="py-32 px-4 md:px-8 bg-background relative overflow-hidden">
-      {/* Crystal octagon decorations */}
+      {/* Crystal decorations with depth effect */}
       <img 
         src={crystal1} 
         alt="" 
-        className="absolute top-[25%] right-[15%] w-24 h-24 opacity-20 blur-[2px] animate-float mix-blend-screen"
-        style={{ animationDelay: '0.5s', animationDuration: '11s' }}
+        className="absolute top-[15%] right-[5%] w-28 h-28 opacity-22 animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '10s' }}
       />
       <img 
         src={crystal2} 
         alt="" 
-        className="absolute bottom-[30%] left-[8%] w-20 h-20 opacity-25 blur-sm animate-float mix-blend-screen"
-        style={{ animationDelay: '2.5s', animationDuration: '9s' }}
+        className="absolute top-[40%] left-[4%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '2s', animationDuration: '12s' }}
       />
       <img 
         src={crystal3} 
         alt="" 
-        className="absolute top-[50%] left-[20%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '4.5s', animationDuration: '10s' }}
+        className="absolute bottom-[30%] right-[10%] w-20 h-20 opacity-18 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '11s' }}
+      />
+      <img 
+        src={crystal1} 
+        alt="" 
+        className="absolute bottom-[15%] left-[8%] w-22 h-22 opacity-12 blur-[3px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '14s' }}
       />
 
       <div className="w-full max-w-none relative z-10">
