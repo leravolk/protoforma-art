@@ -158,13 +158,6 @@ export const ProjectsSection = () => {
                   className="w-full h-auto object-cover"
                 />
               </CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <img
-                  src={sewing3}
-                  alt="Швейная машинка 3"
-                  className="w-full h-auto object-cover"
-                />
-              </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="left-2" />
             <CarouselNext className="right-2" />
