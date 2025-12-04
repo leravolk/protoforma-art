@@ -82,7 +82,7 @@ export const PhilosophySection = () => {
         <div className="relative">
           <span className="absolute -top-8 -left-4 text-8xl md:text-9xl text-primary/30 font-serif leading-none select-none">"</span>
           <blockquote className="font-sans text-base md:text-lg text-left text-foreground leading-relaxed px-8">
-            Для нас принципиально создавать проекты, в которых бренды поддерживают не только форму, но и содержание. В этом pop-up мы соединяем живопись, перформанс, работу с пространством и партнёров так, чтобы зритель получал не рекламную интеграцию, а цельный художественный опыт. Мы верим, что именно такие коллаборации помогают современным художникам звучать громче, а компаниям — говорить с аудиторией на более глубоком эмоциональном уровне.
+            Для нас принципиально создавать проекты, в которых бренды поддерживают не только форму, но и содержание. Мы соединяем живопись, перформанс, работу с пространством и партнёров так, чтобы зритель получал не рекламную интеграцию, а цельный художественный опыт. Мы верим, что именно такие коллаборации помогают современным художникам звучать громче, а компаниям — говорить с аудиторией на более глубоком эмоциональном уровне.
           </blockquote>
           <span className="absolute -bottom-12 -right-4 text-8xl md:text-9xl text-primary/30 font-serif leading-none select-none">"</span>
           <p className="text-center text-muted-foreground mt-8 font-medium">— команда PROTOFORM</p>
