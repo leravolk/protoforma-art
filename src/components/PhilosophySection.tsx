@@ -50,20 +50,9 @@ export const PhilosophySection = () => {
           ))}
         </div>
 
-        <p className="font-sans text-base md:text-lg text-center text-foreground leading-relaxed max-w-4xl mx-auto mb-12">
+        <p className="font-sans text-base md:text-lg text-center text-foreground leading-relaxed max-w-4xl mx-auto">
           Мы работаем на пересечении художественного взгляда, стратегического мышления и пространственного проектирования. Каждый проект превращается в систему, которую можно прожить.
         </p>
-
-        <div className="flex justify-center">
-          <a
-            href="https://t.me/lerawolfy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 text-base font-medium bg-transparent border border-white/80 text-white rounded-md hover:bg-white/10 transition-all duration-300"
-          >
-            Связаться с нами
-          </a>
-        </div>
       </div>
     </section>
   );
