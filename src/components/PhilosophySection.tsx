@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
 
@@ -28,43 +29,32 @@ export const PhilosophySection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Crystal decorations with heavy blur */}
+      {/* Crystal decorations - same as hero */}
       <img
-        src={crystal2}
+        src={crystal1}
         alt=""
-        className="absolute top-[5%] right-[6%] w-10 h-10 opacity-18 blur-md animate-float mix-blend-screen"
+        className="absolute top-[8%] left-[4%] w-28 h-28 opacity-30 blur-[2px] animate-float mix-blend-screen"
         style={{ animationDelay: '0s', animationDuration: '9s' }}
       />
       <img
+        src={crystal2}
+        alt=""
+        className="absolute top-[15%] right-[6%] w-20 h-20 opacity-35 blur-[1px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '10s' }}
+      />
+      <img
         src={crystal3}
         alt=""
-        className="absolute top-[18%] left-[4%] w-8 h-8 opacity-16 blur-[3px] animate-float mix-blend-screen"
+        className="absolute bottom-[20%] left-[10%] w-16 h-16 opacity-20 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '2s', animationDuration: '12s' }}
       />
       <img
-        src={crystal2}
+        src={crystal1}
         alt=""
-        className="absolute bottom-[12%] right-[8%] w-12 h-12 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '4s', animationDuration: '14s' }}
+        className="absolute bottom-[10%] right-[8%] w-32 h-32 opacity-25 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '3s', animationDuration: '8s' }}
       />
-      <img
-        src={crystal3}
-        alt=""
-        className="absolute bottom-[25%] left-[6%] w-9 h-9 opacity-14 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '1s', animationDuration: '11s' }}
-      />
-      <img
-        src={crystal2}
-        alt=""
-        className="absolute top-[40%] right-[3%] w-6 h-6 opacity-12 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '3s', animationDuration: '13s' }}
-      />
-      <img
-        src={crystal3}
-        alt=""
-        className="absolute top-[60%] left-[12%] w-7 h-7 opacity-10 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '5s', animationDuration: '10s' }}
-      />
+
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

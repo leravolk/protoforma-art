@@ -5,6 +5,7 @@ import boothBackground from "@/assets/booth-background.jpg";
 import booth1 from "@/assets/booth-new-1.jpg";
 import booth2 from "@/assets/booth-new-2.jpg";
 import booth3 from "@/assets/booth-new-3.jpg";
+import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
 
@@ -42,54 +43,54 @@ export const ProjectsSection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Crystal decorations with heavy blur */}
+      {/* Crystal decorations - same as hero */}
       <img
-        src={crystal2}
+        src={crystal1}
         alt=""
-        className="absolute top-[3%] right-[5%] w-10 h-10 opacity-18 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '0s', animationDuration: '10s' }}
-      />
-      <img
-        src={crystal3}
-        alt=""
-        className="absolute top-[10%] left-[4%] w-8 h-8 opacity-16 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '2s', animationDuration: '13s' }}
+        className="absolute top-[3%] left-[4%] w-32 h-32 opacity-25 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '8s' }}
       />
       <img
         src={crystal2}
         alt=""
-        className="absolute top-[25%] right-[8%] w-12 h-12 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '4s', animationDuration: '12s' }}
+        className="absolute top-[8%] right-[6%] w-20 h-20 opacity-35 blur-[1px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '10s' }}
       />
       <img
         src={crystal3}
         alt=""
-        className="absolute top-[45%] left-[3%] w-7 h-7 opacity-14 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '1s', animationDuration: '15s' }}
+        className="absolute top-[20%] left-[3%] w-16 h-16 opacity-20 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '2s', animationDuration: '12s' }}
+      />
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute top-[35%] right-[5%] w-28 h-28 opacity-30 blur-[2px] animate-float mix-blend-screen"
+        style={{ animationDelay: '3s', animationDuration: '9s' }}
       />
       <img
         src={crystal2}
         alt=""
-        className="absolute bottom-[35%] right-[6%] w-9 h-9 opacity-12 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '3s', animationDuration: '11s' }}
+        className="absolute top-[50%] left-[5%] w-24 h-24 opacity-25 blur-[3px] animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '11s' }}
+      />
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute top-[65%] right-[4%] w-36 h-36 opacity-40 animate-float mix-blend-screen"
+        style={{ animationDelay: '0.5s', animationDuration: '9s' }}
       />
       <img
         src={crystal3}
         alt=""
-        className="absolute bottom-[20%] left-[6%] w-6 h-6 opacity-10 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '5s', animationDuration: '14s' }}
+        className="absolute bottom-[20%] left-[6%] w-20 h-20 opacity-35 blur-[1px] animate-float mix-blend-screen"
+        style={{ animationDelay: '2.5s', animationDuration: '10s' }}
       />
       <img
-        src={crystal2}
+        src={crystal1}
         alt=""
-        className="absolute bottom-[8%] right-[12%] w-8 h-8 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '2.5s', animationDuration: '9s' }}
-      />
-      <img
-        src={crystal3}
-        alt=""
-        className="absolute top-[60%] right-[4%] w-5 h-5 opacity-10 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '4.5s', animationDuration: '16s' }}
+        className="absolute bottom-[8%] right-[8%] w-40 h-40 opacity-35 animate-float mix-blend-screen"
+        style={{ animationDelay: '1.5s', animationDuration: '10s' }}
       />
 
       <div
