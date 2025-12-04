@@ -70,11 +70,11 @@ export const TeamSection = () => {
         </h2>
 
         {/* Team photos grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12">
           {teamMembers.map((member, index) => (
             <div
               key={member.name}
-              className="group"
+              className="group w-[calc(50%-12px)] md:w-[calc(33.333%-22px)] lg:w-[calc(20%-26px)]"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
