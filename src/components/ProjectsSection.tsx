@@ -199,9 +199,21 @@ export const ProjectsSection = () => {
         </div>
 
         {/* Third Paragraph */}
-        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground">
+        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-16">
           Итог — цельное пространство с характером бренда, где текстиль воспринимается не как экспонат, а как часть визуального высказывания.
         </p>
+
+        {/* Contact Button */}
+        <div className="flex justify-center">
+          <a
+            href="https://t.me/lerawolfy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 text-base font-medium bg-transparent border border-white/80 text-white rounded-md hover:bg-white/10 transition-all duration-300"
+          >
+            Связаться с нами
+          </a>
+        </div>
       </div>
     </section>
   );
