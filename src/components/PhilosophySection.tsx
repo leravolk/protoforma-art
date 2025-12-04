@@ -24,22 +24,34 @@ export const PhilosophySection = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-16 md:py-24 px-4 md:px-8 bg-background"
+      className="py-32 px-4 md:px-8 bg-background"
     >
       <div
         className={`max-w-6xl mx-auto transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h2 className="text-sm md:text-base tracking-widest text-muted-foreground mb-8 md:mb-12">
-          ФИЛОСОФИЯ PROTOFORM
+        <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground uppercase tracking-wide">
+          Философия PROTOFORM
         </h2>
 
-        <div className="text-[12vw] md:text-[10vw] lg:text-[8vw] font-display font-bold leading-[0.9] tracking-tight text-foreground mb-8 md:mb-12">
-          ART — BRAND — SPACE
+        <div className="flex flex-col items-center mb-16 space-y-2">
+          {["ART", "BRAND", "SPACE"].map((word) => (
+            <div
+              key={word}
+              className="w-full font-display font-bold text-foreground text-center"
+              style={{
+                fontSize: "clamp(3rem, 18vw, 12rem)",
+                letterSpacing: "0.5em",
+                lineHeight: 1,
+              }}
+            >
+              {word}
+            </div>
+          ))}
         </div>
 
-        <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
+        <p className="font-sans text-base md:text-lg text-center text-foreground leading-relaxed max-w-4xl mx-auto">
           Мы работаем на пересечении художественного взгляда, стратегического мышления и пространственного проектирования. Каждый проект превращается в систему, которую можно прожить.
         </p>
       </div>
