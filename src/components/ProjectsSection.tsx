@@ -70,7 +70,40 @@ export const ProjectsSection = () => {
           Реализованные проекты
         </h2>
 
-        {/* Project Title */}
+        {/* Project 1: Pop-up Exhibition */}
+        <h3 className="font-display text-2xl md:text-3xl mb-8 text-foreground">
+          Pop-up выставка «Когда он закуривает, начинает идти снег»
+        </h3>
+
+        {/* Main Image placeholder */}
+        <div className="mb-12 bg-muted/30 h-64 md:h-96 flex items-center justify-center border border-dashed border-muted-foreground/30">
+          <span className="text-muted-foreground">Главное фото проекта</span>
+        </div>
+
+        {/* First Paragraph */}
+        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-8">
+          Иммерсивная pop-up выставка, построенная на исследовании памяти, хрупкости эмоциональных состояний и их проявлений в пространстве.
+          Проект включал в себя художественную экспозицию, перформативную среду и специально созданные арт-объекты.
+        </p>
+
+        {/* Key Parameters */}
+        <ul className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-12 space-y-2">
+          <li>• более 200 гостей в формате закрытого события</li>
+          <li>• интеграция бренд-партнёров в художественный контекст</li>
+          <li>• разработка визуальной концепции, среды и маршрута восприятия</li>
+          <li>• подготовка сувенирной продукции для продажи</li>
+          <li>• команда Protoforma выступила хостом мероприятия</li>
+        </ul>
+
+        {/* Carousel placeholder */}
+        <div className="mb-24 bg-muted/30 h-48 md:h-64 flex items-center justify-center border border-dashed border-muted-foreground/30">
+          <span className="text-muted-foreground">Карусель с фото проекта</span>
+        </div>
+
+        {/* Divider between projects */}
+        <div className="border-t border-muted-foreground/20 mb-16"></div>
+
+        {/* Project 2: Apriori Home */}
         <h3 className="font-display text-2xl md:text-3xl mb-8 text-foreground">
           Стенд для Apriori Home — Hometextile & Design 2025
         </h3>
