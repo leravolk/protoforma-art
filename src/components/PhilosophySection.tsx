@@ -51,7 +51,7 @@ export const PhilosophySection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto relative">
-          <span className="absolute -top-8 -left-4 text-8xl md:text-9xl text-primary/30 font-serif leading-none select-none">„</span>
+          <span className="absolute -top-8 -left-4 text-8xl md:text-9xl text-primary/30 font-serif leading-none select-none">"</span>
           <blockquote className="font-sans text-base md:text-lg text-center text-foreground leading-relaxed px-8">
             Для нас принципиально создавать проекты, в которых бренды поддерживают не только форму, но и содержание. В этом pop-up мы соединяем живопись, перформанс, работу с пространством и партнёров так, чтобы зритель получал не рекламную интеграцию, а цельный художественный опыт. Мы верим, что именно такие коллаборации помогают современным художникам звучать громче, а компаниям — говорить с аудиторией на более глубоком эмоциональном уровне.
           </blockquote>
