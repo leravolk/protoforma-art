@@ -3,8 +3,6 @@ import { HeroMinimal } from "@/components/HeroMinimal";
 import { IntroSection } from "@/components/IntroSection";
 import { TeamSection } from "@/components/TeamSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
-import { AboutMinimal } from "@/components/AboutMinimal";
-import { ArtObjectMinimal } from "@/components/ArtObjectMinimal";
 import { ContactsMinimal } from "@/components/ContactsMinimal";
 
 const Index = () => {
@@ -15,8 +13,6 @@ const Index = () => {
       <IntroSection />
       <TeamSection />
       <ProjectsSection />
-      <ArtObjectMinimal />
-      <AboutMinimal />
       <ContactsMinimal />
     </main>
   );
