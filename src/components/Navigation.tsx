@@ -17,10 +17,10 @@ export const Navigation = () => {
             о нас
           </button>
           <button
-            onClick={() => scrollToSection('works')}
+            onClick={() => scrollToSection('projects')}
             className="font-sans text-xs uppercase tracking-wider text-foreground hover:text-foreground/60 transition-colors"
           >
-            работы
+            проекты
           </button>
           <button
             onClick={() => scrollToSection('contact')}
