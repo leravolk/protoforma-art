@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
+import crystal3 from "@/assets/crystal-octagon-3.png";
 
 export const IntroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,18 +31,30 @@ export const IntroSection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Decorative crystal elements */}
+      {/* Crystal decorations with depth effect */}
       <img
         src={crystal1}
         alt=""
-        className="absolute top-[20%] right-[10%] w-20 h-20 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '1s', animationDuration: '12s' }}
+        className="absolute top-[15%] right-[6%] w-24 h-24 opacity-22 animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '9s' }}
       />
       <img
         src={crystal2}
         alt=""
-        className="absolute bottom-[25%] left-[8%] w-16 h-16 opacity-20 blur-[2px] animate-float mix-blend-screen"
-        style={{ animationDelay: '3s', animationDuration: '10s' }}
+        className="absolute top-[30%] left-[4%] w-14 h-14 opacity-15 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '2s', animationDuration: '12s' }}
+      />
+      <img
+        src={crystal3}
+        alt=""
+        className="absolute bottom-[20%] right-[12%] w-18 h-18 opacity-18 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '11s' }}
+      />
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute bottom-[35%] left-[8%] w-20 h-20 opacity-12 blur-[3px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '14s' }}
       />
 
       <div

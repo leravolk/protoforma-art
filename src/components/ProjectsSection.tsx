@@ -42,18 +42,36 @@ export const ProjectsSection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Decorative crystal elements */}
+      {/* Crystal decorations with depth effect */}
       <img
         src={crystal1}
         alt=""
-        className="absolute top-[10%] right-[8%] w-20 h-20 opacity-10 blur-sm animate-float mix-blend-screen"
-        style={{ animationDelay: '1s', animationDuration: '13s' }}
+        className="absolute top-[5%] right-[4%] w-28 h-28 opacity-20 animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '10s' }}
       />
       <img
         src={crystal2}
         alt=""
-        className="absolute bottom-[15%] left-[10%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '3s', animationDuration: '15s' }}
+        className="absolute top-[15%] left-[3%] w-16 h-16 opacity-15 blur-md animate-float mix-blend-screen"
+        style={{ animationDelay: '2s', animationDuration: '13s' }}
+      />
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute top-[40%] right-[6%] w-20 h-20 opacity-18 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '4s', animationDuration: '12s' }}
+      />
+      <img
+        src={crystal2}
+        alt=""
+        className="absolute bottom-[25%] left-[5%] w-22 h-22 opacity-12 blur-[3px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '15s' }}
+      />
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute bottom-[10%] right-[8%] w-18 h-18 opacity-16 blur-[2px] animate-float mix-blend-screen"
+        style={{ animationDelay: '3s', animationDuration: '11s' }}
       />
 
       <div
