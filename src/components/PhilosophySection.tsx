@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
-import crystalClear from "@/assets/crystal-octagon-clear.png";
 
 export const PhilosophySection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,41 +28,41 @@ export const PhilosophySection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Crystal decorations with depth effect */}
+      {/* Crystal decorations with heavy blur */}
       <img
         src={crystal2}
         alt=""
-        className="absolute top-[5%] right-[6%] w-10 h-10 opacity-22 animate-float mix-blend-screen"
+        className="absolute top-[5%] right-[6%] w-10 h-10 opacity-18 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '0s', animationDuration: '9s' }}
       />
       <img
         src={crystal3}
         alt=""
-        className="absolute top-[18%] left-[4%] w-8 h-8 opacity-16 blur-md animate-float mix-blend-screen"
+        className="absolute top-[18%] left-[4%] w-8 h-8 opacity-16 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '2s', animationDuration: '12s' }}
       />
       <img
-        src={crystalClear}
+        src={crystal2}
         alt=""
-        className="absolute bottom-[12%] right-[8%] w-12 h-12 opacity-18 blur-sm animate-float mix-blend-screen"
+        className="absolute bottom-[12%] right-[8%] w-12 h-12 opacity-15 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '4s', animationDuration: '14s' }}
       />
       <img
-        src={crystal2}
+        src={crystal3}
         alt=""
         className="absolute bottom-[25%] left-[6%] w-9 h-9 opacity-14 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '1s', animationDuration: '11s' }}
       />
       <img
-        src={crystal3}
+        src={crystal2}
         alt=""
         className="absolute top-[40%] right-[3%] w-6 h-6 opacity-12 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '3s', animationDuration: '13s' }}
       />
       <img
-        src={crystalClear}
+        src={crystal3}
         alt=""
-        className="absolute top-[60%] left-[12%] w-7 h-7 opacity-15 blur-sm animate-float mix-blend-screen"
+        className="absolute top-[60%] left-[12%] w-7 h-7 opacity-10 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '5s', animationDuration: '10s' }}
       />
       <div

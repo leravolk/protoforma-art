@@ -1,38 +1,37 @@
 import { Mail, Send, Instagram } from "lucide-react";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
-import crystalClear from "@/assets/crystal-octagon-clear.png";
 
 export const ContactsMinimal = () => {
   return (
     <section id="contact" className="py-32 px-4 md:px-8 bg-background relative overflow-hidden">
-      {/* Crystal decorations with depth effect */}
+      {/* Crystal decorations with heavy blur */}
       <img 
         src={crystal2} 
         alt="" 
-        className="absolute top-[10%] right-[6%] w-10 h-10 opacity-22 animate-float mix-blend-screen"
+        className="absolute top-[10%] right-[6%] w-10 h-10 opacity-18 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '0s', animationDuration: '10s' }}
       />
       <img 
         src={crystal3} 
         alt="" 
-        className="absolute top-[30%] left-[5%] w-8 h-8 opacity-16 blur-md animate-float mix-blend-screen"
+        className="absolute top-[30%] left-[5%] w-8 h-8 opacity-16 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '2s', animationDuration: '12s' }}
       />
       <img 
-        src={crystalClear} 
+        src={crystal2} 
         alt="" 
-        className="absolute bottom-[35%] right-[8%] w-11 h-11 opacity-18 blur-sm animate-float mix-blend-screen"
+        className="absolute bottom-[35%] right-[8%] w-11 h-11 opacity-15 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '4s', animationDuration: '11s' }}
       />
       <img 
-        src={crystal2} 
+        src={crystal3} 
         alt="" 
         className="absolute bottom-[20%] left-[10%] w-7 h-7 opacity-14 blur-[3px] animate-float mix-blend-screen"
         style={{ animationDelay: '1s', animationDuration: '14s' }}
       />
       <img 
-        src={crystal3} 
+        src={crystal2} 
         alt="" 
         className="absolute top-[55%] right-[4%] w-6 h-6 opacity-12 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '3s', animationDuration: '13s' }}
