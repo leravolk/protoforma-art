@@ -60,7 +60,7 @@ export const PhilosophySection = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h2 className="font-display text-3xl md:text-4xl text-center mb-16 text-foreground uppercase tracking-wide">
+        <h2 className="font-display text-2xl md:text-3xl text-left mb-16 text-foreground uppercase tracking-wide">
           Философия PROTOFORM
         </h2>
 

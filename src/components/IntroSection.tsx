@@ -53,13 +53,13 @@ export const IntroSection = () => {
       />
 
       <div
-        className={`max-w-4xl mx-auto text-center space-y-8 transition-all duration-1000 ${
+        className={`max-w-6xl mx-auto transition-all duration-1000 ${
           isVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-10"
         }`}
       >
-        <p className="font-sans text-lg md:text-xl leading-relaxed text-foreground max-w-5xl mx-auto">
+        <p className="font-sans text-lg md:text-xl leading-relaxed text-foreground text-left">
           Protoform — мультидисциплинарное творческое агентство на стыке искусства, бренда и пространственных решений. Мы создаём выставки, инсталляции, ивенты, стенды и арт-объекты, которые усиливают идентичность брендов и формируют эмоциональное взаимодействие с аудиторией. Наш подход строится на синтезе художественного взгляда и продакшна полного цикла.
         </p>
       </div>
