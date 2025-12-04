@@ -35,15 +35,14 @@ export const PhilosophySection = () => {
           Философия PROTOFORM
         </h2>
 
-        <div className="flex flex-col items-center mb-16 space-y-2">
+        <div className="flex flex-col items-center mb-16 space-y-0">
           {["ART", "BRAND", "SPACE"].map((word) => (
             <div
               key={word}
-              className="w-full font-display font-bold text-foreground text-center"
+              className="w-full font-display font-bold text-foreground text-center tracking-tight"
               style={{
-                fontSize: "clamp(3rem, 18vw, 12rem)",
-                letterSpacing: "0.5em",
-                lineHeight: 1,
+                fontSize: "clamp(4rem, 22vw, 16rem)",
+                lineHeight: 0.9,
               }}
             >
               {word}
