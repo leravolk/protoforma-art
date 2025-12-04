@@ -29,8 +29,8 @@ export const ContactsMinimal = () => {
       <div className="w-full max-w-none relative z-10">
         <div className="space-y-16 text-left">
           {/* Title */}
-          <h2 className="font-display text-5xl md:text-7xl font-light text-primary tracking-tight">
-            КОНТАКТЫ
+          <h2 className="font-display text-3xl md:text-4xl mb-20 text-foreground uppercase tracking-wide">
+            Контакты
           </h2>
 
           {/* Contact Info */}
