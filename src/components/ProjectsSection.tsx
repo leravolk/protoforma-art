@@ -5,9 +5,6 @@ import boothBackground from "@/assets/booth-background.jpg";
 import booth1 from "@/assets/booth-new-1.jpg";
 import booth2 from "@/assets/booth-new-2.jpg";
 import booth3 from "@/assets/booth-new-3.jpg";
-import sewing1 from "@/assets/sewing-new-1.jpg";
-import sewing2 from "@/assets/sewing-new-2.jpg";
-import sewing3 from "@/assets/sewing-new-3.jpg";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 
@@ -73,7 +70,7 @@ export const ProjectsSection = () => {
 
         {/* Project 1: Pop-up Exhibition */}
         <h3 className="font-display text-2xl md:text-3xl mb-8 text-foreground">
-          Pop-up выставка «Когда он закуривает, начинает идти снег»
+          Pop-up выставка ENTER «Когда он закуривает, начинает идти снег»
         </h3>
 
         {/* Main Image placeholder */}
@@ -82,13 +79,13 @@ export const ProjectsSection = () => {
         </div>
 
         {/* First Paragraph */}
-        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-8">
+        <p className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground mb-8">
           Иммерсивная pop-up выставка, построенная на исследовании памяти, хрупкости эмоциональных состояний и их проявлений в пространстве.
           Проект включал в себя художественную экспозицию, перформативную среду и специально созданные арт-объекты.
         </p>
 
         {/* Key Parameters */}
-        <ul className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-12 space-y-2">
+        <ul className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground mb-12 space-y-2">
           <li>• более 200 гостей в формате закрытого события</li>
           <li>• интеграция бренд-партнёров в художественный контекст</li>
           <li>• разработка визуальной концепции, среды и маршрута восприятия</li>
@@ -119,7 +116,7 @@ export const ProjectsSection = () => {
         </div>
 
         {/* First Paragraph */}
-        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-8">
+        <p className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground mb-8">
           Стенд «Сказочная мастерская» был создан как пространственная инсталляция, основанная на образе ремесленной мастерской — месте, где рождается ткань.
           Центральным элементом стала конструкция из натуральных ветвей, символизирующая истоки материала и ручной труд. На неё были интегрированы драпировки из фирменного текстиля Apriori.
         </p>
@@ -163,43 +160,12 @@ export const ProjectsSection = () => {
         </div>
 
         {/* Second Paragraph */}
-        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-8">
+        <p className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground mb-8">
           Винтажная швейная машинка, расписанная художницей Елизаветой Григоровой, является акцентом композиции и связала ремесленную традицию с современным художественным прочтением.
         </p>
 
-        {/* Second Carousel - Sewing Machine */}
-        <div className="mb-12">
-          <Carousel
-            plugins={[Autoplay({ delay: 4000, stopOnInteraction: true })]}
-            className="w-full"
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-          >
-            <CarouselContent>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <img
-                  src={sewing1}
-                  alt="Швейная машинка 1"
-                  className="w-full h-auto object-cover"
-                />
-              </CarouselItem>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                <img
-                  src={sewing2}
-                  alt="Швейная машинка 2"
-                  className="w-full h-auto object-cover"
-                />
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
-          </Carousel>
-        </div>
-
         {/* Third Paragraph */}
-        <p className="font-sans text-base md:text-lg leading-relaxed text-foreground mb-16">
+        <p className="font-sans text-base md:text-lg leading-relaxed text-muted-foreground mb-16">
           Итог — цельное пространство с характером бренда, где текстиль воспринимается не как экспонат, а как часть визуального высказывания.
         </p>
 
