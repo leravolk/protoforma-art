@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
 
@@ -30,36 +31,24 @@ export const IntroSection = () => {
       ref={sectionRef}
       className="py-32 px-4 md:px-8 bg-background relative overflow-hidden"
     >
-      {/* Crystal decorations with heavy blur */}
+      {/* Crystal decorations - same as hero */}
+      <img
+        src={crystal1}
+        alt=""
+        className="absolute top-[10%] right-[5%] w-24 h-24 opacity-25 blur-sm animate-float mix-blend-screen"
+        style={{ animationDelay: '0s', animationDuration: '8s' }}
+      />
       <img
         src={crystal2}
         alt=""
-        className="absolute top-[12%] right-[8%] w-10 h-10 opacity-20 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '0s', animationDuration: '9s' }}
+        className="absolute bottom-[15%] left-[8%] w-20 h-20 opacity-35 blur-[1px] animate-float mix-blend-screen"
+        style={{ animationDelay: '1s', animationDuration: '10s' }}
       />
       <img
         src={crystal3}
         alt=""
-        className="absolute top-[25%] left-[5%] w-8 h-8 opacity-18 blur-[3px] animate-float mix-blend-screen"
+        className="absolute top-[25%] left-[3%] w-16 h-16 opacity-20 blur-md animate-float mix-blend-screen"
         style={{ animationDelay: '2s', animationDuration: '12s' }}
-      />
-      <img
-        src={crystal2}
-        alt=""
-        className="absolute bottom-[22%] right-[4%] w-12 h-12 opacity-15 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '4s', animationDuration: '11s' }}
-      />
-      <img
-        src={crystal3}
-        alt=""
-        className="absolute bottom-[30%] left-[10%] w-6 h-6 opacity-12 blur-[3px] animate-float mix-blend-screen"
-        style={{ animationDelay: '1s', animationDuration: '14s' }}
-      />
-      <img
-        src={crystal2}
-        alt=""
-        className="absolute top-[50%] right-[15%] w-7 h-7 opacity-10 blur-md animate-float mix-blend-screen"
-        style={{ animationDelay: '3s', animationDuration: '10s' }}
       />
 
       <div
