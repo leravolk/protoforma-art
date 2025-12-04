@@ -133,6 +133,44 @@ export const ProjectsSection = () => {
           Винтажная швейная машинка, расписанная художницей Елизаветой Григоровой, является акцентом композиции и связала ремесленную традицию с современным художественным прочтением.
         </p>
 
+        {/* Second Carousel - Sewing Machine */}
+        <div className="mb-12">
+          <Carousel
+            plugins={[Autoplay({ delay: 4000, stopOnInteraction: true })]}
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={sewing1}
+                  alt="Швейная машинка 1"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={sewing2}
+                  alt="Швейная машинка 2"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={sewing3}
+                  alt="Швейная машинка 3"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
+        </div>
+
         {/* Third Paragraph */}
         <p className="font-sans text-base md:text-lg leading-relaxed text-foreground">
           Итог — цельное пространство с характером бренда, где текстиль воспринимается не как экспонат, а как часть визуального высказывания.
