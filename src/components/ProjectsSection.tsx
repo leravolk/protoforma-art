@@ -70,7 +70,8 @@ export const ProjectsSection = () => {
 
         {/* Project 1: Pop-up Exhibition */}
         <h3 className="font-display text-2xl md:text-3xl mb-8 text-foreground">
-          Pop-up выставка ENTER «Когда он закуривает, начинает идти снег»
+          Pop-up выставка<br />
+          «Когда он закуривает, начинает идти снег»
         </h3>
 
         {/* Main Image placeholder */}
