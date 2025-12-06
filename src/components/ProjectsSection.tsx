@@ -5,6 +5,7 @@ import boothBackground from "@/assets/booth-background.jpg";
 import booth1 from "@/assets/booth-new-1.jpg";
 import booth2 from "@/assets/booth-new-2.jpg";
 import booth3 from "@/assets/booth-new-3.jpg";
+import exhibitionHero from "@/assets/exhibition-hero.jpg";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
@@ -112,9 +113,13 @@ export const ProjectsSection = () => {
           «Когда он закуривает, начинает идти снег»
         </h3>
 
-        {/* Main Image placeholder */}
-        <div className="mb-12 bg-muted/30 h-64 md:h-96 flex items-center justify-center border border-dashed border-muted-foreground/30">
-          <span className="text-muted-foreground">Главное фото проекта</span>
+        {/* Main Image */}
+        <div className="mb-12">
+          <img
+            src={exhibitionHero}
+            alt="Pop-up выставка «Когда он закуривает, начинает идти снег»"
+            className="w-full h-auto object-cover"
+          />
         </div>
 
         {/* First Paragraph */}
