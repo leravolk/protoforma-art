@@ -6,6 +6,10 @@ import booth1 from "@/assets/booth-new-1.jpg";
 import booth2 from "@/assets/booth-new-2.jpg";
 import booth3 from "@/assets/booth-new-3.jpg";
 import exhibitionHero from "@/assets/exhibition-hero.jpg";
+import exhibition1 from "@/assets/exhibition-1.jpg";
+import exhibition2 from "@/assets/exhibition-2.jpg";
+import exhibition3 from "@/assets/exhibition-3.jpg";
+import exhibition4 from "@/assets/exhibition-4.jpg";
 import crystal1 from "@/assets/crystal-octagon-1.png";
 import crystal2 from "@/assets/crystal-octagon-2.png";
 import crystal3 from "@/assets/crystal-octagon-3.png";
@@ -137,9 +141,48 @@ export const ProjectsSection = () => {
           <li>• команда Protoforma выступила хостом мероприятия</li>
         </ul>
 
-        {/* Carousel placeholder */}
-        <div className="mb-24 bg-muted/30 h-48 md:h-64 flex items-center justify-center border border-dashed border-muted-foreground/30">
-          <span className="text-muted-foreground">Карусель с фото проекта</span>
+        {/* Exhibition Carousel */}
+        <div className="mb-24">
+          <Carousel
+            className="w-full"
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+          >
+            <CarouselContent>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={exhibition1}
+                  alt="Выставка - фото 1"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={exhibition2}
+                  alt="Выставка - фото 2"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={exhibition3}
+                  alt="Выставка - фото 3"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                <img
+                  src={exhibition4}
+                  alt="Выставка - фото 4"
+                  className="w-full h-auto object-cover"
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
+          </Carousel>
         </div>
 
         {/* Divider between projects */}
